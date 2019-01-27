@@ -4,6 +4,7 @@
 
 ### Abstraction ###
 > Abstraction  by  parameterization abstracts from the details of data representations by representing the data as named parameters.
+>
 > https://www.computer.org/web/swebok
 
 >Abstraction  by  specification leads  to  three  major  kinds  of  abstraction: 
@@ -18,10 +19,16 @@
 
 ### Minimization of Complexity ###
 >The need to reduce complexity is mainly driven by limited ability of most people to hold complex structures and information in their working memories ...
+>
 >https://en.wikipedia.org/wiki/Software_construction#Minimizing_complexity
 
 >reduced complexity is  achieved  through  emphasizing  code  creation  that is simple and readable rather than clever.
+>
 >https://www.computer.org/web/swebok
+
+>Minimize the “intellectual distance”, between the software and the real-world problem.
+>
+> A. M. Davis https://doi.org/10.1016/S0065-2458(08)60544-6
 
 >* Simple is better than complex.
 >* Complex is better than complicated.
@@ -34,23 +41,27 @@
 >
 > https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ee658124(v=pandp.10)#KeyDesignPrinciples
 
-### Single Responsibility principle ###
-
-> There should be one-- and preferably only one --obvious way to do it.
->
-> https://www.python.org/dev/peps/pep-0020/#id3
 
 ### Principle of Least Knowledge ###
  Law of Demeter or LoD
  
-### Don’t repeat yourself (DRY) ###
+### Don’t repeat yourself (DRY) / Single Responsibility principle ###
 DRY by Andy Hunt / Dave Thomas in "The Pragmatic Programmer"
 
 > ... a little copying is better than a little dependency ...
 >
 > Rob Pike / https://www.youtube.com/watch?v=PAAkCSZUG1c 
 
+
+> There should be one-- and preferably only one --obvious way to do it.
+>
+> https://www.python.org/dev/peps/pep-0020/#id3
+
 #### Reuse ####
+> Don’t “reinvent the wheel”
+> 
+> Guidelines from A. M. Davis
+
 > Systematic reuse can enable significant software productivity, quality, and cost improvements.
 >
 > https://www.computer.org/web/swebok
@@ -80,11 +91,16 @@ TODO https://en.wikipedia.org/wiki/Single_source_of_truth
 #### BDUF / Big Design Up Front ####
 
 > argue that time spent in designing is a worthwhile investment, with the hope that less time and effort will be spent fixing a bug in the early stages of a software product's lifecycle than when that same bug is found and must be fixed later. That is, it is much easier to fix a requirements bug in the requirements phase than to fix that same bug in the implementation phase, as to fix a requirements bug in the implementation phase requires scrapping at least some of the implementation and design work which has already been completed. 
+>
 > https://en.wikipedia.org/wiki/Big_Design_Up_Front
 
 #### YAGNI / You aren't gonna need it ####
-Principle of XP. 
-The need of implementing not currently required code is a sign of losing focus on the actual problem.
+A principle of XP. 
+The need for implementing not currently required code is a sign of losing focus on the actual problem.
+
+> Design elements should be traceable to requirements.
+> 
+> A. M. Davis https://doi.org/10.1016/S0065-2458(08)60544-6
 
 >"Always implement things when you actually need them, never when you just foresee that you need them.
 >
